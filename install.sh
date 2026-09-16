@@ -37,12 +37,13 @@ echo "📝 Creating desktop launcher shortcut..."
 # Generate the desktop shortcut file dynamically with correct local paths
 cat << EOF > "$DESKTOP_FILE"
 [Desktop Entry]
+StartupWMClass=converter.py
 Version=1.0
 Type=Application
 Name=Video Audio Transcoder
 Comment=Fix smartphone video audio tracks for DaVinci Resolve
 Exec=python3 $APP_DIR/converter.py
-Icon=video-display
+Icon=$APP_DIR/icon.png
 Terminal=false
 Categories=Utility;AudioVideo;Video;
 EOF

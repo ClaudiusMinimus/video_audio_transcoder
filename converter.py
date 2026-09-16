@@ -100,6 +100,11 @@ def select_destination_folder():
 
 # --- UI Layout Setup ---
 root = tk.Tk()
+icon_file_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'icon.png')
+if os.path.exists(icon_file_path):
+    root.iconphoto(False, tk.PhotoImage(file=icon_file_path))
+else:
+    root.iconphoto(False, tk.PhotoImage(name='video-display', master=root))
 root.title('Batch Video Converter')
 
 # Source layout
