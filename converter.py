@@ -7,6 +7,7 @@ import threading
 import os
 import subprocess
 import platform
+import webbrowser
 
 def run_async(func, *args):
     """Helper function to run heavy tasks in a background thread."""
@@ -123,5 +124,15 @@ individual_button.grid(row=3, column=0, columnspan=3, pady=10)
 # Progress Bar Widget (New!)
 progress_bar = ttk.Progressbar(root, orient='horizontal', length=400, mode='indeterminate')
 progress_bar.grid(row=4, column=0, columnspan=3, pady=15)
+
+
+def open_github():
+    webbrowser.open_new_tab("https://github.com")
+
+label = tk.Label(root, text='Visit GitHub Repository', cursor='hand2', fg='blue', underline=True)
+label.grid(row=5, column=0, columnspan=3, pady=10, ipady=4)  # Adjusted padding to ensure the link appears underlined
+
+label.bind('<Button-1>', lambda event: open_github())
+
 
 root.mainloop()
