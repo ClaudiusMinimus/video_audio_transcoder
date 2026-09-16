@@ -13,6 +13,7 @@ This application requires **FFmpeg** to be installed on your host system.
 
 1. Clone this repository or download `converter.py`.
 2. Execute the script natively using your Python interpreter:
+
    ```bash
    python3 converter.py
    ```
@@ -20,12 +21,14 @@ This application requires **FFmpeg** to be installed on your host system.
 ## Installation & Uninstallation
 
 To install the application and add it directly to your system app menu:
+
 ```bash
 chmod +x install.sh
 ./install.sh
 ```
 
 To cleanly remove the desktop launcher from your system menu:
+
 ```bash
 ./install.sh --uninstall
 ```
