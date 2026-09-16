@@ -1,0 +1,19 @@
+# Ignore the local Python virtual environment
+venv/
+.venv/
+ENV/
+
+# Ignore Python bytecode compilation caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore local operating system hidden files
+.DS_Store
+Thumbs.db
+
+# Ignore local IDE workspace configurations
+.vscode/
+.void/
+*.code-workspace
