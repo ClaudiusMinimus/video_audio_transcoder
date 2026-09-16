@@ -127,7 +127,7 @@ progress_bar.grid(row=4, column=0, columnspan=3, pady=15)
 
 
 def open_github():
-    webbrowser.open_new_tab("https://github.com")
+    webbrowser.open_new_tab("https://github.com/ClaudiusMinimus/video_audio_transcoder")
 
 label = tk.Label(root, text='Visit GitHub Repository', cursor='hand2', fg='blue', underline=True)
 label.grid(row=5, column=0, columnspan=3, pady=10, ipady=4)  # Adjusted padding to ensure the link appears underlined
